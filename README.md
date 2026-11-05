@@ -1,5 +1,7 @@
 # Explication du projet
 
+Auteur : **Alex Collin**
+
 ## Présentation et lancement du projet
 L'API a été développée avec Java 25, Spring Boot 4, H2, Keycloak, S3 et Lucene.  
 L'[accès au Swagger](http://localhost:8080/swagger-ui/index.html#/) nécessite de renseigner un token pour les routes où l'on doit être connecté.  
@@ -43,4 +45,5 @@ En termes d'architecture, j'ai aussi repris celle du projet réalisé en cours. 
 ## Autres
 
 - Je tiens à préciser que l’entièreté du code de ce projet a été écrite à la main : aucune ligne n’a été générée par une IA. Pour avancer, je me suis surtout servi de ce qu'on avait fait en cours et de la documentation. Quand je bloquais sur quelque chose, ou quand je mettais du temps à comprendre avec seulement la documentation (celle de Spring est assez verbeuse), je me suis servi de l'IA comme d'une aide. Je ne lui demandais pas le code du projet, mais des explications et des exemples concrets, en dehors du projet, assez clairs pour que je comprenne le principe et que je sache ensuite comment l’adapter moi-même ici.
+- Pour la javadoc, j'ai utilisé le raccourci d'intelliJ `/**` + <kbd>Entrer</kbd>, qui génère automatiquement la javadoc pour les classes et méthodes. J'ai ensuite complété les javadocs générées.
 - Pour finir, je voulais vous remercier pour ce cours, qui était vraiment incroyable.
