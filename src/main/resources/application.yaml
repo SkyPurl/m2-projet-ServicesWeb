@@ -1,0 +1,36 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://keycloak.bober.ovh/realms/master
+          jwk-set-uri: https://keycloak.bober.ovh/realms/master/protocol/openid-connect/certs
+  application:
+    name: examen
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+  datasource:
+    url: jdbc:h2:./examen;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+s3:
+  endpoint: https://s3.bober.ovh
+  access-key: ${S3_ACCESS_KEY}
+  secret-key: ${S3_SECRET_KEY}
+  prefixe: alex
+  region: us-east-1
+  buckets:
+    restaurant: restaurant
+    evaluation: evaluation
